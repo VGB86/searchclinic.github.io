@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    color:grey;
+}
+#wrap{
+    display: flex;
+    width: 100%;
+}
+/*----------------barra lateral --------*/
+header{
+    width: 20%;
+}
+#lateral {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: grey;
+    max-width: fill-available;
+    max-height: fill-available;
+}
+
+.imgPerfil{
+    width: 100px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+.menu{
+    margin-top: 65px;
+    text-align: initial;
+}
+.menu div{
+    display: block;
+    padding: 15px;
+}
+.menu div:first-child{
+    background-color: #6dc2c9;
+}
+
+.menu a{
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+
+/*----------------Buscador ------------------*/
+main {
+    width: 79%;
+}
+.container{
+    background-color: #f1f1f1;
+    padding: 15px;
+    max-width: fill-available;
+}
+
+.logo {
+    display: absolute;
+    float: right;
+    width: 125px;
+    margin-top: 15px;
+}
+h5{
+    color:rgb(83, 81, 81);
+    font-size: 15px;
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+select, option, input, button{
+    border-color:transparent;
+    width: 24%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+ #tercerfiltro{
+    margin-top: 1em;
+} 
+#pacienteNombre{
+    width: 60%; 
+}
+
+#botonEdad, #superboton,  #buscar{
+    background-color:#6dc2c9 ;
+    color:white ;
+    border: none; 
+    padding: 11px 11px; 
+    cursor: pointer;
+    margin-left: 1em; 
+}
+
+#resultados{
+    background-color: #C9D9DC;
+    display: block;
+    max-width: fill-available;
+    height: 1080px;
+    overflow: scroll;
+}
+
+main h2{
+    background-color: grey;
+    color: white;
+    padding: 4px;
+    width: 35px;
+    margin-left: 10px;
+    float: right;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+#pacientes article{
+    margin-top: 25px;
+    margin-left: 70px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 0px rgba(161,161,161,1);
+    width: 30%;
+    display: inline-block;
+    background-color: #f1f1f1;
+}
+
+#pacientes article ul{
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #wrap{
+        display: block;
+        width: 100%;
+    }
+	header{
+        width:100%;
+    }
+    .imgPerfil{
+        width: 60px;
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    .menu{
+        margin-top: 1em;
+        text-align:center;
+    }
+    
+    .menu div{
+        display: inline-block;
+        padding: 1em;
+    }
+    .menu div:first-child{
+        background-color: #fff;
+    }
+    main {
+        width: 79%;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .material-icons{
+        max-width: 5px;
+    }
+    .menu a{
+        font-size: 0px; 
+        margin-left: 2em;
+    }
+    main{
+        text-align:center;
+    } 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .logo{
+        max-width: 50px;
+        align-self: flex-end;
+        margin-top: 0;
+    } 
+    select, option, input, button, #pacienteNombre{
+        width: 80%; 
+        padding: 10px; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+    }
+
+    #pacientes article{
+        margin: auto;
+        padding: 30px; 
+        width: 40%;
+        display: block;
+        margin-top: 1em;
+    }
+    
+    
+    
+}
